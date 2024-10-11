@@ -1,10 +1,7 @@
 # TeaCup
 Code challenge TeaCup
 
-
-Code challenge  
-
- In Java language, implement a simple ceiling fan with these characteristics:
+# Java language, implement a simple ceiling fan with these characteristics:#
 
 
 ·  The unit has 2 pull cords:
