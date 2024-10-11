@@ -72,8 +72,8 @@ public class CeilingFanTest {
 	public void testSpeedMaintainedOnDirectionChange() {
 		
 		// Tests whether speed is maintained after changing direction
-		fan.pullSpeedCord(); // Velocidade 1
-		fan.pullDirectionCord(); // Reverso
+		fan.pullSpeedCord(); // Speed 1
+		fan.pullDirectionCord(); // Reverse
 
 		assertEquals(1, fan.getSpeed());
 		assertEquals("CounterClockwise", fan.getDirection());
@@ -88,10 +88,10 @@ public class CeilingFanTest {
 	public void testSpeedAndDirectionCycle() {
 		
 		// Test the complete speed and direction cycle
-		fan.pullSpeedCord(); // Velocidade 1
-		fan.pullSpeedCord(); // Velocidade 2
-		fan.pullSpeedCord(); // Velocidade 3
-		fan.pullDirectionCord(); // Reverso
+		fan.pullSpeedCord(); // Speed ​​1
+		fan.pullSpeedCord(); // Speed ​​2
+		fan.pullSpeedCord(); // Speed ​​3
+		fan.pullDirectionCord(); // Reverse
 		assertEquals("CounterClockwise", fan.getDirection());
 
 		fan.pullSpeedCord(); // Reset to 0 (off), direction remains
